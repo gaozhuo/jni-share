@@ -7,7 +7,7 @@ static jclass globalRef = NULL;
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_example_a01317930_demo05_MainActivity_test(JNIEnv *env, jobject instance) {
+Java_com_example_demo0501_MainActivity_test(JNIEnv *env, jobject instance) {
 
     if(localRef == NULL){
         jclass cls = env->GetObjectClass(instance);

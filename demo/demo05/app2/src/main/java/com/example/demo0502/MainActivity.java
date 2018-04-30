@@ -1,13 +1,13 @@
-package com.example.a01317930.demo05;
+package com.example.demo0502;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    public int number = 0;
+
+    public String[] stringArray = new String[520];
 
     static {
         System.loadLibrary("native-lib");
@@ -18,15 +18,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // 初始化数组
+        for (int i = 0; i < stringArray.length; i++) {
+            stringArray[i] = "str_" + i;
+        }
+
     }
 
 
     public void onButtonClick01(View view) {
 
-        test();
+        iterateArray(stringArray);
 
-        Log.d("debug", "number=" + number);
     }
 
-    public native void test();
+
+    public native void iterateArray(String[] stringArray);
 }

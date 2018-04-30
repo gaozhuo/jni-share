@@ -1,4 +1,4 @@
-package com.example.a01317930.demo05;
+package com.example.demo0502;
 
 import org.junit.Test;
 

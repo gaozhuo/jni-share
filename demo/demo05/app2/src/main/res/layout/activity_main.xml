@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onButtonClick01"
-        android:text="局部引用与全局引用" />
-
+        android:text="局部引用表溢出" />
 
 </LinearLayout>

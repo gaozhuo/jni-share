@@ -1,4 +1,4 @@
-package com.example.a01317930.demo05;
+package com.example.demo0501;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
