@@ -16,7 +16,7 @@ Java_com_example_demo0502_MainActivity_iterateArray(JNIEnv *env, jobject instanc
         __android_log_print(ANDROID_LOG_DEBUG, "debug", "%s", env->GetStringUTFChars(str, NULL));
 
         // 删除本地引用
-        env->DeleteLocalRef(str);
+        //env->DeleteLocalRef(str);
 
     }
 

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         // 初始化数组
         for (int i = 0; i < stringArray.length; i++) {
-            stringArray[i] = "str_" + i;
+            stringArray[i] = String.format("%04d", i + 1);
         }
 
     }
